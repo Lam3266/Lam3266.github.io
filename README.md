@@ -50,6 +50,6 @@ Université du Québec à Montréal (UQAM) — 2022-2025
 
 - [Courriel](lmndaouda@gmail.com)  
 - [LinkedIn](linkedin.com/in/lamine-daouda-abdoulaye-332011243)  
-- [GitHub](https://github.com/Lam3266)
+- [GitHub]([https://github.com/Lam3266](https://lam3266.github.io))
 - Tel : +1 (438) 540-2417
 
