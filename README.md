@@ -5,7 +5,7 @@ Bienvenue sur mon portfolio personnel !
 ## À propos de moi
 Étudiant en Informatique à l’UQAM avec un fort intérêt pour les systèmes embarqués, le développement logiciel. Je souhaite appliquer mes compétences à travers une expérience concrète en entreprise.
 
-## 🚀 Projets récents
+##  Projets récents
 
 ### 🔸 Projet 1 : Casquette intelligente pour Non-Voyants
 - **Description :** La casquette intègre une caméra connectée à un serveur distant utilisant l’IA pour l’analyse des images.
@@ -48,8 +48,8 @@ Université du Québec à Montréal (UQAM) — 2022-2025
 
 ## 📧 Me contacter
 
-- Courriel : lmndaouda@gmail.com  
+- [Courriel](lmndaouda@gmail.com)  
 - [LinkedIn](linkedin.com/in/lamine-daouda-abdoulaye-332011243)  
 - [GitHub](https://github.com/Lam3266)
-- Tel : +1 (438)540-2417
+- Tel : +1 (438) 540-2417
 
