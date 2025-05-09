@@ -44,7 +44,7 @@ microcontrôleur (Arduino) active l'arrosage; s'il est humide, l'arrosage est d�
 ## 🎓 Formation
 
 **Baccalauréat en Informatique**  
-Université du Québec à Montréal (UQAM) — 2022-2025
+Université du Québec à Montréal (UQAM) — JANVIER 2022- AVRIL 2025
 
 ## 📧 Me contacter
 
