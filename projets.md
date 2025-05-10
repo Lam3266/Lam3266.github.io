@@ -1,4 +1,9 @@
-# 🚀 Projets récents
+# 🚀 Projets réalisés
+
+
+Voici quelques-uns des projets que j’ai réalisés au cours de ma formation et de mes expériences pratiques.  
+📝 Pour chaque projet, vous pouvez cliquer sur le titre pour consulter une page dédiée avec une description détaillée, des images et des démonstrations.
+
 
 ---
 
