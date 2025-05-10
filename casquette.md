@@ -20,7 +20,7 @@ Python, Arduino, ESP32-CAM, OpenCV, YOLOv8, Socket réseau
 ![Image du prototype](casquette.png)
 
 ## 🎥 Démonstration
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TON_CODE_VIDEO" frameborder="0" allowfullscreen></iframe>
+
 
 ## 🔎 Fonctionnement
 1. Détection de l’obstacle
