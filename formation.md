@@ -6,7 +6,8 @@
 
 ✅ Diplôme obtenu
 
-Ce programme m’a permis de développer une double compétence en **informatique** et en **électronique**, avec des connaissances solides en :
+Ce programme m’a permis de développer une double compétence en **informatique** et en **électronique**, 
+avec des connaissances solides en :
 - Développement logiciel (Python, C/C++, Java)
 - Systèmes embarqués et microcontrôleurs (Arduino, ESP32)
 - Programmation matérielle (VHDL, FPGA)
