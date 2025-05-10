@@ -17,7 +17,7 @@ une direction sécuritaire à l’utilisateur.
 Python, Arduino, ESP32-CAM, OpenCV, YOLOv8, Socket réseau
 
 ## 🖼️ Images du projet
-![Image du prototype](images/casquette.jpg)
+![Image du prototype](images/casquette.png)
 
 ## 🎥 Démonstration
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TON_CODE_VIDEO" frameborder="0" allowfullscreen></iframe>
