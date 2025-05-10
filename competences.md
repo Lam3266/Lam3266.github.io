@@ -27,7 +27,7 @@
 ---
 
 ### 🔎 Domaines techniques
-- Développement web, embarqué et IA
+- Développement web, embarqué
 - Conception de systèmes Arduino
 - Programmation matérielle avec **VHDL** sur **FPGA**
 
