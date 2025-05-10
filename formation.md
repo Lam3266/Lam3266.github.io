@@ -15,6 +15,7 @@ Ce programme m’a permis de développer une double compétence en **informatiqu
 ### 🧮 Diplôme d’études collégiales en Mathématiques  
 **Maarif**, Niamey (Niger)  
 📅 Octobre 2019 – Juillet 2021
+✅ Diplôme obtenu
 
 Formation préparatoire axée sur les **sciences fondamentales**, en particulier :
 - Mathématiques avancées
