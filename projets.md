@@ -7,7 +7,7 @@ Voici quelques-uns des projets que j’ai réalisés au cours de ma formation et
 
 ---
 
-### 🧢 [Casquette intelligente pour personnes non-voyantes](casquette.md)
+### 🧢 [Casquette intelligente pour personnes mal-voyantes](casquette.md)
 
 ---
 
