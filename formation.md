@@ -24,7 +24,7 @@ Formation préparatoire axée sur les **sciences fondamentales**, en particulier
 - Mathématiques avancées
 - Physique appliquée
   
-
+---
 
 
 [⬅️ Retour à l’accueil](index.md)
