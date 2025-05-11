@@ -22,7 +22,7 @@ les données en temps réel.
 ## 🎥 Démonstration
 
 
-[![Voir la vidéo](yout_freq.png)](https://youtu.be/enLC2pWVirE)
+[Voir la vidéo](https://youtu.be/enLC2pWVirE)
 
 
 
