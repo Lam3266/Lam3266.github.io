@@ -22,7 +22,7 @@ les données en temps réel.
 ## 🎥 Démonstration
 
 
-[Voir la vidéo](https://youtu.be/enLC2pWVirE)
+[Cliquez ici pour voir la vidéo](https://youtu.be/enLC2pWVirE)
 
 
 
