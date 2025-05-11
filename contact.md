@@ -5,6 +5,6 @@
 - 🌐 **Portfolio :** [lam3266.github.io](https://lam3266.github.io)  
 - 📞 **Téléphone :** +1 (438) 540-2417
 
-
+---
 
 [⬅️ Retour à l’accueil](index.md)
