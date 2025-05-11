@@ -11,6 +11,6 @@
 - Réalisation de **corrections**, **démonstrations en laboratoire** et **monitorat de programme**.  
 - Soutien individualisé aux étudiant.e.s et participation active à leur réussite dans plusieurs cours du département d’informatique.
 
-
+---
 
 [⬅️ Retour à l’accueil](index.md)
