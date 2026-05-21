@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEU Cloud — Lamine Daouda Abdoulaye</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">LAM</a>
+  <div class="nav-links">
+    <a href="../index.html#projets">Projets</a>
+    <a href="../index.html#competences">Compétences</a>
+    <a href="../index.html#contact" class="nav-btn">Contact</a>
+  </div>
+</nav>
+<div class="page-wrapper">
+  <a href="../index.html#projets" class="back-link">← Retour aux projets</a>
+  <div class="project-header-tag">Projet principal · SaaS</div>
+  <h1 class="project-header-title">GEU Cloud</h1>
+  <p class="project-header-desc">
+    Plateforme SaaS de gestion d'équipements industriels et techniques — conçue pour centraliser
+    l'inventaire, les tickets de maintenance, la traçabilité et les tableaux de bord en un seul outil.
+    Projet en développement avec une architecture API REST découplée du frontend React.
+  </p>
+  <div class="project-actions">
+    <span class="status-badge" style="font-size:12px; padding: 8px 16px;">Privé — Code source non public</span>
+  </div>
+  <div class="project-section">
+    <h3>Problème résolu</h3>
+    <p>
+      La gestion d'équipements dans les organisations repose souvent sur des tableurs dispersés, sans traçabilité
+      des interventions ni historique des pannes. GEU Cloud centralise ces données avec des rôles utilisateurs,
+      une API REST structurée et des alertes de maintenance.
+    </p>
+  </div>
+  <div class="project-section">
+    <h3>Stack technique</h3>
+    <div class="tech-stack">
+      <span class="tech">Django REST Framework</span>
+      <span class="tech">React</span>
+      <span class="tech">TypeScript</span>
+      <span class="tech">PostgreSQL</span>
+      <span class="tech">API REST</span>
+      <span class="tech">JWT Auth</span>
+      <span class="tech">QR Code</span>
+    </div>
+  </div>
+  <div class="project-section">
+    <h3>Modules principaux</h3>
+    <ul>
+      <li>Inventaire d'équipements avec historique complet</li>
+      <li>Système de tickets de maintenance (création, assignation, clôture)</li>
+      <li>Traçabilité par QR Code — scan pour accéder à la fiche équipement</li>
+      <li>Gestion des emplacements et des sites</li>
+      <li>Rôles utilisateurs hiérarchisés (admin, technicien, lecteur)</li>
+      <li>Tableaux de bord avec indicateurs de maintenance</li>
+      <li>API REST documentée pour intégrations tierces</li>
+    </ul>
+  </div>
+  <div class="project-section">
+    <h3>Architecture générale</h3>
+    <p>
+      Backend Django REST découplé du frontend React/TypeScript. Authentification par JWT.
+      Base de données PostgreSQL avec modèles relationnels (équipements, tickets, emplacements, utilisateurs).
+      Permissions gérées au niveau de l'API. Déploiement prévu sur un VPS avec Nginx.
+    </p>
+  </div>
+  <div class="project-section">
+    <h3>Défis techniques</h3>
+    <ul>
+      <li>Conception d'un système de permissions granulaires par rôle et par ressource</li>
+      <li>Génération et validation des QR Codes liés aux équipements</li>
+      <li>Gestion des états du cycle de vie des tickets (ouvert → en cours → résolu → clôturé)</li>
+      <li>Sérialisation imbriquée des relations Django REST sans N+1 queries</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

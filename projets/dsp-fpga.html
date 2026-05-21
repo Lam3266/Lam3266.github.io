@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DSP FPGA — Lamine Daouda Abdoulaye</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">LAM</a>
+  <div class="nav-links">
+    <a href="../index.html#projets">Projets</a>
+    <a href="../index.html#competences">Compétences</a>
+    <a href="../index.html#contact" class="nav-btn">Contact</a>
+  </div>
+</nav>
+<div class="page-wrapper">
+  <a href="../index.html#projets" class="back-link">← Retour aux projets</a>
+  <div class="project-header-tag">FPGA · VHDL · MIC7345 (2e cycle)</div>
+  <h1 class="project-header-title">Processeur DSP sur FPGA</h1>
+  <p class="project-header-desc">
+    Conception complète en VHDL d'un processeur de signal numérique (DSP) simplifié déployé sur un FPGA Nexys Video.
+    Le processeur implémente un pipeline avec ALU (addition, multiplication, accumulation), une interface mémoire,
+    un module UART et un affichage 7 segments. Projet de cours de 2e cycle.
+  </p>
+  <div class="project-actions">
+    <a class="btn-github" href="GITHUB_URL_DSP" target="_blank" rel="noopener">⎇ Voir le code sur GitHub</a>
+    <a class="btn-secondary" href="https://youtu.be/ech19JU2vrI" target="_blank" rel="noopener">▶ Vidéo de démonstration</a>
+  </div>
+  <div class="tech-stack" style="margin-bottom: 40px;">
+    <span class="tech">VHDL</span>
+    <span class="tech">FPGA Nexys Video</span>
+    <span class="tech">ModelSim</span>
+    <span class="tech">Vivado</span>
+    <span class="tech">UART</span>
+    <span class="tech">Pipeline</span>
+  </div>
+  <div class="project-section">
+    <h3>Architecture du processeur</h3>
+    <ul>
+      <li>Noyau DSP avec pipeline fetch / decode / execute</li>
+      <li>ALU supportant addition, multiplication et accumulation (MAC)</li>
+      <li>Interface mémoire pour chargement des instructions et données</li>
+      <li>Module UART pour communication série avec le PC</li>
+      <li>Affichage 7 segments (BCD) du résultat en temps réel</li>
+      <li>Module de décodage binaire → BCD → affichage</li>
+    </ul>
+  </div>
+  <div class="project-section">
+    <h3>Fichiers VHDL</h3>
+    <ul>
+      <li><code style="color: var(--accent);">DSP_projet_final.vhd</code> — entité principale du processeur</li>
+      <li><code style="color: var(--accent);">DSP.vhd</code> — noyau de traitement</li>
+      <li><code style="color: var(--accent);">UART.vhd</code> — module de communication série</li>
+      <li><code style="color: var(--accent);">DSP_projrt_final_tb.vhd</code> — testbench de simulation</li>
+      <li><code style="color: var(--accent);">binary_to_bcd.vhd</code>, <code style="color: var(--accent);">bcd_to_7seg_display.vhd</code> — pipeline d'affichage</li>
+    </ul>
+  </div>
+  <div class="project-section">
+    <h3>Points techniques clés</h3>
+    <ul>
+      <li>Logique synchrone sur horloge FPGA avec gestion des états de pipeline</li>
+      <li>Testbench complet vérifiant le comportement cycle par cycle</li>
+      <li>Validation en simulation avant synthèse sur carte physique</li>
+      <li>Contraintes de timing et fichier XDC pour le Nexys Video</li>
+    </ul>
+  </div>
+  <img src="../assets/img/arch_dsp.png" alt="Architecture du processeur DSP" class="project-img">
+  <img src="../assets/img/dsp.png" alt="DSP sur FPGA" class="project-img" style="margin-top: 16px;">
+</div>
+</body>
+</html>

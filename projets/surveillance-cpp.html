@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surveillance C++ — Lamine Daouda Abdoulaye</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">LAM</a>
+  <div class="nav-links">
+    <a href="../index.html#projets">Projets</a>
+    <a href="../index.html#competences">Compétences</a>
+    <a href="../index.html#contact" class="nav-btn">Contact</a>
+  </div>
+</nav>
+<div class="page-wrapper">
+  <a href="../index.html#projets" class="back-link">← Retour aux projets</a>
+  <div class="project-header-tag">C++ · Structures de données · INF3105</div>
+  <h1 class="project-header-title">Système de surveillance<br>de localisation</h1>
+  <p class="project-header-desc">
+    Application C++ modulaire de surveillance de localisation avec historique horodaté.
+    Implémente des structures de données avancées (arbre AVL, arbre map, pile) pour gérer
+    efficacement les entrées, sorties et l'historique des entités suivies.
+  </p>
+  <div class="project-actions">
+    <a class="btn-github" href="GITHUB_URL_CPP" target="_blank" rel="noopener">⎇ Voir le code sur GitHub</a>
+  </div>
+  <div class="tech-stack" style="margin-bottom: 40px;">
+    <span class="tech">C++</span>
+    <span class="tech">Arbre AVL</span>
+    <span class="tech">Arbre Map</span>
+    <span class="tech">Makefile</span>
+    <span class="tech">Tests unitaires</span>
+  </div>
+  <div class="project-section">
+    <h3>Structures de données utilisées</h3>
+    <ul>
+      <li><code style="color: var(--accent);">arbreavl.h</code> — arbre AVL auto-équilibré pour indexation rapide</li>
+      <li><code style="color: var(--accent);">arbremap.h</code> — arbre map pour association clé-valeur</li>
+      <li><code style="color: var(--accent);">pile.h</code> — pile générique pour gestion d'états</li>
+      <li><code style="color: var(--accent);">historique.h/.cpp</code> — enregistrement horodaté des événements</li>
+      <li><code style="color: var(--accent);">dateheure.h/.cpp</code> — type date/heure avec opérations de comparaison</li>
+    </ul>
+  </div>
+  <div class="project-section">
+    <h3>Points techniques clés</h3>
+    <ul>
+      <li>Implémentation manuelle d'arbres AVL avec rotations simples et doubles</li>
+      <li>Gestion d'états de présence avec transitions horodatées</li>
+      <li>Suite de tests unitaires avec cas limites (entrées invalides, séquences vides)</li>
+      <li>Code modulaire séparant structures de données, logique métier et I/O</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>

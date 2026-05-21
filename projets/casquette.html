@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casquette intelligente — Lamine Daouda Abdoulaye</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">LAM</a>
+  <div class="nav-links">
+    <a href="../index.html#projets">Projets</a>
+    <a href="../index.html#competences">Compétences</a>
+    <a href="../index.html#contact" class="nav-btn">Contact</a>
+  </div>
+</nav>
+<div class="page-wrapper">
+  <a href="../index.html#projets" class="back-link">← Retour aux projets</a>
+  <div class="project-header-tag">IoT · IA appliquée · MIC5012</div>
+  <h1 class="project-header-title">Casquette intelligente<br>pour non-voyants</h1>
+  <p class="project-header-desc">
+    Prototype combinant détection d'obstacles par ultrason et reconnaissance visuelle par IA embarquée.
+    Lorsqu'un obstacle est détecté par le capteur HC-SR04, la caméra ESP32-CAM capture une image
+    traitée par YOLOv8 sur un serveur Python, qui retourne une recommandation de direction sous forme audio.
+  </p>
+  <div class="project-actions">
+    <a class="btn-github" href="GITHUB_URL_CASQUETTE" target="_blank" rel="noopener">⎇ Voir le code sur GitHub</a>
+    <a class="btn-secondary" href="https://youtu.be/ns8U8x6rCXE" target="_blank" rel="noopener">▶ Vidéo de démonstration</a>
+  </div>
+  <div class="tech-stack" style="margin-bottom: 40px;">
+    <span class="tech">Python</span>
+    <span class="tech">YOLOv8</span>
+    <span class="tech">OpenCV</span>
+    <span class="tech">ESP32-CAM</span>
+    <span class="tech">Arduino MKR1000</span>
+    <span class="tech">HC-SR04</span>
+    <span class="tech">Sockets TCP</span>
+  </div>
+  <div class="project-section">
+    <h3>Fonctionnement</h3>
+    <ul>
+      <li>Le capteur HC-SR04 mesure la distance en continu</li>
+      <li>Sous le seuil critique, il déclenche la capture d'image via l'ESP32-CAM</li>
+      <li>L'image est envoyée par socket TCP au serveur Python</li>
+      <li>YOLOv8 identifie les objets et leur position dans le cadre</li>
+      <li>Le serveur calcule la direction libre (gauche / droite / recul) et l'envoie en retour</li>
+      <li>Un message audio est joué sur le haut-parleur de la casquette</li>
+    </ul>
+  </div>
+  <div class="project-section">
+    <h3>Points techniques clés</h3>
+    <ul>
+      <li>Intégration capteur ultrason / microcontrôleur / caméra / serveur IA en pipeline temps réel</li>
+      <li>Communication Wi-Fi bas niveau entre ESP32 et serveur Python via sockets</li>
+      <li>Modèle YOLOv8 entraîné et optimisé pour la détection d'obstacles courants</li>
+      <li>Latence maîtrisée entre détection et retour audio (&lt; 2 secondes)</li>
+      <li>Tests sur obstacles réels avec analyse des limites du modèle</li>
+    </ul>
+  </div>
+  <img src="../assets/img/casquette.png" alt="Prototype de la casquette intelligente" class="project-img">
+</div>
+</body>
+</html>
