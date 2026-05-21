@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Développeur logiciel junior avec forte culture systèmes, embarqué et validation technique — Lamine Daouda Abdoulaye, diplômé UQAM.">
+  <title>Lamine Daouda Abdoulaye — Développeur logiciel junior</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <a href="#" class="nav-logo">LAM</a>
+  <div class="nav-links">
+    <a href="#projets">Projets</a>
+    <a href="#competences">Compétences</a>
+    <a href="#contact" class="nav-btn">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-tag">Développeur logiciel junior</div>
+  <h1>Lamine<br><span class="accent">Daouda</span> Abdoulaye</h1>
+  <p class="hero-desc">
+    Diplômé en systèmes informatiques et électroniques de l'UQAM. Je conçois des solutions logicielles
+    combinant API REST, React, Python, C/C++ et systèmes embarqués — avec une rigueur technique validée
+    par des projets concrets allant du SaaS aux FPGA.
+  </p>
+  <div class="badges">
+    <span class="badge">Python</span>
+    <span class="badge">Django REST</span>
+    <span class="badge">React / TypeScript</span>
+    <span class="badge">PostgreSQL</span>
+    <span class="badge">C / C++</span>
+    <span class="badge">VHDL / FPGA</span>
+    <span class="badge">Arduino / ESP32</span>
+  </div>
+  <div class="ctas">
+    <a class="btn-primary" href="#projets">Voir mes projets</a>
+    <a class="btn-secondary" href="assets/cv/Lamine_Daouda_Abdoulaye_CV_Developpeur_Logiciel_Junior.pdf" download>Télécharger le CV</a>
+  </div>
+  <div class="hero-stats">
+    <div>
+      <div class="stat-num">3.54</div>
+      <div class="stat-label">Moyenne / 4.3</div>
+    </div>
+    <div>
+      <div class="stat-num">3×</div>
+      <div class="stat-label">Liste d'excellence du doyen</div>
+    </div>
+    <div>
+      <div class="stat-num">5+</div>
+      <div class="stat-label">Projets publiés</div>
+    </div>
+    <div>
+      <div class="stat-num">2025</div>
+      <div class="stat-label">Diplômé UQAM</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- PROJETS -->
+<section class="section" id="projets">
+  <div class="section-tag">Portfolio</div>
+  <div class="section-title">Projets réalisés</div>
+
+  <div class="project-grid">
+
+    <!-- GEU Cloud (vedette) -->
+    <a href="projets/geu-cloud.html" class="project-featured">
+      <div>
+        <div class="feat-label">Projet principal</div>
+        <div class="feat-title">GEU Cloud</div>
+        <p class="feat-desc">
+          Plateforme SaaS de gestion d'équipements — inventaire, tickets de maintenance,
+          traçabilité QR Code, rôles utilisateurs, tableaux de bord et API REST.
+        </p>
+        <div class="tech-stack">
+          <span class="tech">Django REST</span>
+          <span class="tech">React</span>
+          <span class="tech">TypeScript</span>
+          <span class="tech">PostgreSQL</span>
+          <span class="tech">API REST</span>
+        </div>
+      </div>
+      <div class="feat-right">
+        <span class="status-badge">Privé</span>
+        <span class="link-arrow">Étude de cas →</span>
+      </div>
+    </a>
+
+    <!-- Casquette IA -->
+    <a href="projets/casquette.html" class="project-card">
+      <div class="card-cat">IoT · IA appliquée</div>
+      <div class="card-title">Casquette intelligente pour non-voyants</div>
+      <p class="card-desc">Détection d'obstacles par ultrason + reconnaissance visuelle YOLOv8 en temps réel via ESP32-CAM. Retour audio de direction.</p>
+      <div class="tech-stack" style="margin-bottom: 14px;">
+        <span class="tech">Python</span>
+        <span class="tech">YOLOv8</span>
+        <span class="tech">ESP32</span>
+        <span class="tech">Arduino</span>
+      </div>
+      <div class="card-footer">
+        <span class="github-link">⎇ GitHub</span>
+        <span class="link-arrow" style="font-size:11px;">Voir →</span>
+      </div>
+    </a>
+
+    <!-- DSP FPGA -->
+    <a href="projets/dsp-fpga.html" class="project-card">
+      <div class="card-cat">FPGA · VHDL · 2e cycle</div>
+      <div class="card-title">Processeur DSP sur FPGA</div>
+      <p class="card-desc">Conception d'un processeur DSP simplifié en VHDL avec pipeline, ALU (add/mult/accumulate) et testbench de validation. Cours de 2e cycle.</p>
+      <div class="tech-stack" style="margin-bottom: 14px;">
+        <span class="tech">VHDL</span>
+        <span class="tech">FPGA</span>
+        <span class="tech">Testbench</span>
+      </div>
+      <div class="card-footer">
+        <span class="github-link">⎇ GitHub</span>
+        <span class="link-arrow" style="font-size:11px;">Voir →</span>
+      </div>
+    </a>
+
+    <!-- Rythme cardiaque -->
+    <a href="projets/rythme-cardiaque.html" class="project-card">
+      <div class="card-cat">Embarqué · Flask</div>
+      <div class="card-title">Suivi du rythme cardiaque en temps réel</div>
+      <p class="card-desc">Lecture analogique Arduino → calcul BPM → serveur Flask → visualisation temps réel sur interface web.</p>
+      <div class="tech-stack" style="margin-bottom: 14px;">
+        <span class="tech">Arduino</span>
+        <span class="tech">Flask</span>
+        <span class="tech">Python</span>
+      </div>
+      <div class="card-footer">
+        <span class="github-link">⎇ GitHub</span>
+        <span class="link-arrow" style="font-size:11px;">Voir →</span>
+      </div>
+    </a>
+
+    <!-- Surveillance C++ -->
+    <a href="projets/surveillance-cpp.html" class="project-card">
+      <div class="card-cat">C++ · Structures de données</div>
+      <div class="card-title">Système de surveillance de localisation</div>
+      <p class="card-desc">Application C++ modulaire avec arbres AVL, gestion d'historique horodaté et traitement de données de localisation.</p>
+      <div class="tech-stack" style="margin-bottom: 14px;">
+        <span class="tech">C++</span>
+        <span class="tech">AVL Tree</span>
+        <span class="tech">Makefile</span>
+      </div>
+      <div class="card-footer">
+        <span class="github-link">⎇ GitHub</span>
+        <span class="link-arrow" style="font-size:11px;">Voir →</span>
+      </div>
+    </a>
+
+    <!-- Simulation C -->
+    <a href="projets/hydro-c.html" class="project-card">
+      <div class="card-cat">C · Algorithmique</div>
+      <div class="card-title">Simulation de production hydroélectrique</div>
+      <p class="card-desc">Simulation en C de production d'énergie avec validation de données, calculs physiques et structuration modulaire.</p>
+      <div class="tech-stack" style="margin-bottom: 14px;">
+        <span class="tech">C</span>
+        <span class="tech">GitLab</span>
+      </div>
+      <div class="card-footer">
+        <span class="github-link">⎇ GitLab UQAM</span>
+        <span class="link-arrow" style="font-size:11px;">Voir →</span>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- COMPÉTENCES -->
+<section class="section" id="competences">
+  <div class="section-tag">Compétences</div>
+  <div class="section-title">Stack technique</div>
+
+  <div class="excellence-banner">
+    <div class="excellence-icon">★</div>
+    <div class="excellence-text">
+      <strong>Excellence académique</strong> — Moyenne 3.54 / 4.3 · Liste d'excellence du doyen : Hiver 2022, Automne 2022, Hiver 2023
+    </div>
+  </div>
+
+  <div class="skills-grid">
+    <div class="skill-group">
+      <div class="skill-group-title">Logiciel principal</div>
+      <div class="skill-list">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Django REST</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">API REST</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Linux</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Embarqué · Hardware</div>
+      <div class="skill-list">
+        <span class="skill-tag">C / C++</span>
+        <span class="skill-tag">Arduino</span>
+        <span class="skill-tag">ESP32</span>
+        <span class="skill-tag">VHDL</span>
+        <span class="skill-tag">FPGA</span>
+        <span class="skill-tag">UART</span>
+        <span class="skill-tag">Capteurs</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="skill-group-title">Complémentaires</div>
+      <div class="skill-list">
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">Flask</span>
+        <span class="skill-tag">OpenCV</span>
+        <span class="skill-tag">YOLOv8</span>
+        <span class="skill-tag">Cadence</span>
+        <span class="skill-tag">LTspice</span>
+        <span class="skill-tag">Wireshark</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- CONTACT -->
+<section class="section" id="contact" style="padding-bottom: 80px;">
+  <div class="section-tag">Contact</div>
+  <div class="section-title">Prenons contact</div>
+  <p class="contact-desc">
+    Ouvert aux opportunités de développement logiciel junior au Canada.<br>
+    Disponible à la relocalisation.
+  </p>
+  <div class="contact-links">
+    <a class="btn-primary" href="mailto:lmndaouda@gmail.com">lmndaouda@gmail.com</a>
+    <a class="btn-secondary" href="https://linkedin.com/in/lamine-daouda-abdoulaye" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn-secondary" href="https://github.com/lam3266" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+</body>
+</html>
