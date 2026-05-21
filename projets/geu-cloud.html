@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GEU Cloud — Lamine Daouda Abdoulaye</title>
+  <title>GEU Cloud — Case Study — Lamine Daouda Abdoulaye</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -16,28 +16,44 @@
   </div>
 </nav>
 <div class="page-wrapper">
+
   <a href="../index.html#projets" class="back-link">← Retour aux projets</a>
-  <div class="project-header-tag">Projet principal · SaaS</div>
+
+  <div class="project-header-tag">Projet principal · SaaS · En développement</div>
   <h1 class="project-header-title">GEU Cloud</h1>
   <p class="project-header-desc">
-    Plateforme SaaS de gestion d'équipements industriels et techniques — conçue pour centraliser
-    l'inventaire, les tickets de maintenance, la traçabilité et les tableaux de bord en un seul outil.
-    Projet en développement avec une architecture API REST découplée du frontend React.
+    Plateforme SaaS de gestion d'équipements industriels et techniques — inventaire, tickets de maintenance,
+    traçabilité QR Code, rôles utilisateurs hiérarchisés et tableaux de bord. Architecture découplée
+    Django REST / React TypeScript avec base PostgreSQL.
   </p>
   <div class="project-actions">
-    <span class="status-badge" style="font-size:12px; padding: 8px 16px;">Privé — Code source non public</span>
+    <span class="status-badge" style="font-size:12px; padding: 8px 18px;">Privé — Code source non public</span>
   </div>
+
+  <div class="project-section">
+    <h3>Résumé</h3>
+    <p>
+      GEU Cloud est une application web métier complète construite avec Django REST Framework côté backend
+      et React/TypeScript côté frontend. Elle centralise la gestion du cycle de vie des équipements :
+      de l'inventaire initial jusqu'aux tickets de maintenance, en passant par la traçabilité QR Code et
+      les permissions granulaires par rôle. Le projet est en développement continu avec pour objectif une
+      commercialisation B2B.
+    </p>
+  </div>
+
   <div class="project-section">
     <h3>Problème résolu</h3>
     <p>
-      La gestion d'équipements dans les organisations repose souvent sur des tableurs dispersés, sans traçabilité
-      des interventions ni historique des pannes. GEU Cloud centralise ces données avec des rôles utilisateurs,
-      une API REST structurée et des alertes de maintenance.
+      Les organisations gèrent encore leurs équipements via des tableurs dispersés : aucune traçabilité
+      des interventions, historique des pannes perdu, accès non contrôlé et données non centralisées.
+      GEU Cloud répond à ce problème avec une plateforme structurée autour des flux réels :
+      acquisition → inventaire → maintenance → historique → reporting.
     </p>
   </div>
+
   <div class="project-section">
     <h3>Stack technique</h3>
-    <div class="tech-stack">
+    <div class="tech-stack" style="margin-bottom: 16px;">
       <span class="tech">Django REST Framework</span>
       <span class="tech">React</span>
       <span class="tech">TypeScript</span>
@@ -45,37 +61,144 @@
       <span class="tech">API REST</span>
       <span class="tech">JWT Auth</span>
       <span class="tech">QR Code</span>
+      <span class="tech">Git</span>
     </div>
   </div>
+
   <div class="project-section">
-    <h3>Modules principaux</h3>
-    <ul>
-      <li>Inventaire d'équipements avec historique complet</li>
-      <li>Système de tickets de maintenance (création, assignation, clôture)</li>
-      <li>Traçabilité par QR Code — scan pour accéder à la fiche équipement</li>
-      <li>Gestion des emplacements et des sites</li>
-      <li>Rôles utilisateurs hiérarchisés (admin, technicien, lecteur)</li>
-      <li>Tableaux de bord avec indicateurs de maintenance</li>
-      <li>API REST documentée pour intégrations tierces</li>
-    </ul>
+    <h3>Fonctionnalités principales</h3>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <span class="feature-card-icon">📦</span>
+        <div class="feature-card-title">Inventaire équipements</div>
+        <div class="feature-card-desc">Fiche complète par équipement — modèle, état, emplacement, historique</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-card-icon">🎫</span>
+        <div class="feature-card-title">Tickets de maintenance</div>
+        <div class="feature-card-desc">Création, assignation, suivi et clôture avec workflow d'état complet</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-card-icon">🔍</span>
+        <div class="feature-card-title">Traçabilité QR Code</div>
+        <div class="feature-card-desc">Scan QR pour accès instantané à la fiche équipement et son historique</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-card-icon">👥</span>
+        <div class="feature-card-title">Rôles utilisateurs</div>
+        <div class="feature-card-desc">Hiérarchie admin → technicien → lecteur avec permissions par ressource</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-card-icon">📊</span>
+        <div class="feature-card-title">Tableaux de bord</div>
+        <div class="feature-card-desc">Indicateurs de maintenance, équipements actifs, tickets ouverts</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-card-icon">📍</span>
+        <div class="feature-card-title">Gestion emplacements</div>
+        <div class="feature-card-desc">Organisation par sites et emplacements avec affectation des équipements</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-card-icon">🔗</span>
+        <div class="feature-card-title">API REST documentée</div>
+        <div class="feature-card-desc">Endpoints structurés pour intégrations tierces et accès mobile</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-card-icon">📋</span>
+        <div class="feature-card-title">Historique complet</div>
+        <div class="feature-card-desc">Journal horodaté de toutes les interventions par équipement</div>
+      </div>
+      <div class="feature-card">
+        <span class="feature-card-icon">🔒</span>
+        <div class="feature-card-title">Permissions granulaires</div>
+        <div class="feature-card-desc">Contrôle d'accès par rôle ET par ressource au niveau API</div>
+      </div>
+    </div>
   </div>
+
   <div class="project-section">
     <h3>Architecture générale</h3>
+    <div class="arch-diagram">
+      <div class="arch-layer">React / TypeScript</div>
+      <div class="arch-layer-sub">Interface utilisateur — composants, état, formulaires, validation côté client</div>
+      <div class="arch-arrow">↕</div>
+      <div class="arch-layer">API REST Django REST Framework</div>
+      <div class="arch-layer-sub">Endpoints, sérialisation, authentification JWT, permissions, logique métier</div>
+      <div class="arch-arrow">↕</div>
+      <div class="arch-layer">PostgreSQL</div>
+      <div class="arch-layer-sub">Modèles relationnels — équipements, tickets, emplacements, utilisateurs, historique</div>
+    </div>
     <p>
-      Backend Django REST découplé du frontend React/TypeScript. Authentification par JWT.
-      Base de données PostgreSQL avec modèles relationnels (équipements, tickets, emplacements, utilisateurs).
-      Permissions gérées au niveau de l'API. Déploiement prévu sur un VPS avec Nginx.
+      Architecture découplée : le frontend React consomme l'API via des appels HTTP authentifiés par JWT.
+      Les permissions sont vérifiées côté backend à chaque requête. Déploiement prévu sur VPS avec Nginx en reverse proxy.
     </p>
   </div>
+
+  <div class="project-section">
+    <h3>Ce que j'ai conçu et réalisé</h3>
+    <div class="built-grid">
+      <div class="built-item">Conception du schéma de base de données relationnel</div>
+      <div class="built-item">Implémentation des endpoints REST (CRUD + logique métier)</div>
+      <div class="built-item">Système de permissions granulaires par rôle et ressource</div>
+      <div class="built-item">Architecture des composants React et gestion d'état</div>
+      <div class="built-item">Intégration frontend ↔ API REST avec gestion d'erreurs</div>
+      <div class="built-item">Workflow d'états des tickets (ouvert → en cours → clôturé)</div>
+      <div class="built-item">Génération et validation des QR Codes par équipement</div>
+      <div class="built-item">Sérialisation imbriquée sans N+1 queries (select_related)</div>
+      <div class="built-item">Validation des données d'entrée côté API</div>
+      <div class="built-item">Organisation modulaire du projet (apps Django découplées)</div>
+    </div>
+  </div>
+
   <div class="project-section">
     <h3>Défis techniques</h3>
     <ul>
-      <li>Conception d'un système de permissions granulaires par rôle et par ressource</li>
-      <li>Génération et validation des QR Codes liés aux équipements</li>
-      <li>Gestion des états du cycle de vie des tickets (ouvert → en cours → résolu → clôturé)</li>
-      <li>Sérialisation imbriquée des relations Django REST sans N+1 queries</li>
+      <li>Concevoir un système de permissions couvrant à la fois les rôles hiérarchiques et les droits par ressource</li>
+      <li>Synchroniser les états entre le frontend React et l'API sans sur-fetching</li>
+      <li>Gérer les relations imbriquées Django (équipement → tickets → historique) de manière performante</li>
+      <li>Structurer l'API pour être lisible par le frontend et extensible pour des intégrations tierces</li>
+      <li>Maintenir la qualité des données avec validation à deux niveaux (formulaire client + API)</li>
     </ul>
   </div>
+
+  <div class="project-section">
+    <h3>Aperçus de l'interface</h3>
+    <p style="margin-bottom: 20px;">
+      GEU Cloud est un projet privé en développement. Pour protéger le code source et la propriété
+      intellectuelle, seules certaines captures de l'interface sont publiées.
+    </p>
+    <div class="screenshot-grid">
+      <div>
+        <img src="../assets/img/geu/dashboard_admin.png" alt="Dashboard administrateur GEU Cloud" class="project-img">
+        <p style="font-size:11px; color:var(--text-dim); margin-top:6px; text-align:center;">Dashboard administrateur</p>
+      </div>
+      <div>
+        <img src="../assets/img/geu/equipment_RI.png" alt="Liste des équipements GEU Cloud" class="project-img">
+        <p style="font-size:11px; color:var(--text-dim); margin-top:6px; text-align:center;">Gestion des équipements</p>
+      </div>
+      <div>
+        <img src="../assets/img/geu/ticket_tech.png" alt="Tickets de maintenance GEU Cloud" class="project-img">
+        <p style="font-size:11px; color:var(--text-dim); margin-top:6px; text-align:center;">Tickets de maintenance</p>
+      </div>
+      <div>
+        <img src="../assets/img/geu/intervention_tech.png" alt="Suivi des interventions GEU Cloud" class="project-img">
+        <p style="font-size:11px; color:var(--text-dim); margin-top:6px; text-align:center;">Suivi des interventions</p>
+      </div>
+      <div>
+        <img src="../assets/img/geu/maintenance_RI.png" alt="Planning maintenance GEU Cloud" class="project-img">
+        <p style="font-size:11px; color:var(--text-dim); margin-top:6px; text-align:center;">Planning de maintenance</p>
+      </div>
+      <div>
+        <img src="../assets/img/geu/users_admin.png" alt="Gestion des utilisateurs GEU Cloud" class="project-img">
+        <p style="font-size:11px; color:var(--text-dim); margin-top:6px; text-align:center;">Gestion des utilisateurs</p>
+      </div>
+    </div>
+    <div style="margin-top:12px;">
+      <img src="../assets/img/geu/audits-logs_admin.png" alt="Journal d'audit GEU Cloud" class="project-img">
+      <p style="font-size:11px; color:var(--text-dim); margin-top:6px; text-align:center;">Journal d'audit administrateur</p>
+    </div>
+  </div>
+
 </div>
 </body>
 </html>
