@@ -21,25 +21,21 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-tag">Développeur logiciel junior</div>
+  <div class="hero-tag">Diplômé UQAM · Disponible au Canada</div>
   <h1>Lamine<br><span class="accent">Daouda</span> Abdoulaye</h1>
+  <p class="hero-role">Développeur logiciel junior — applications métier, systèmes techniques et embarqué</p>
+  <p class="hero-subtitle">Python • React/TypeScript • Django REST • SQL • C/C++ • Systèmes embarqués</p>
   <p class="hero-desc">
-    Diplômé en systèmes informatiques et électroniques de l'UQAM. Je conçois des solutions logicielles
-    combinant API REST, React, Python, C/C++ et systèmes embarqués — avec une rigueur technique validée
-    par des projets concrets allant du SaaS aux FPGA.
+    Diplômé en systèmes informatiques et électroniques de l'UQAM, je développe des applications techniques
+    et des systèmes intégrés combinant API REST, SQL, React/TypeScript, Python, C/C++, capteurs et validation.
+    Mon profil se distingue par une forte rigueur, une excellence académique reconnue et des projets complets
+    allant d'une plateforme SaaS privée aux systèmes embarqués et FPGA.
   </p>
-  <div class="badges">
-    <span class="badge">Python</span>
-    <span class="badge">Django REST</span>
-    <span class="badge">React / TypeScript</span>
-    <span class="badge">PostgreSQL</span>
-    <span class="badge">C / C++</span>
-    <span class="badge">VHDL / FPGA</span>
-    <span class="badge">Arduino / ESP32</span>
-  </div>
-  <div class="ctas">
-    <a class="btn-primary" href="#projets">Voir mes projets</a>
+  <div class="ctas-4">
+    <a class="btn-primary" href="projets/geu-cloud.html">Voir GEU Cloud</a>
+    <a class="btn-secondary" href="#projets">Voir projets embarqués</a>
     <a class="btn-secondary" href="assets/cv/Lamine_Daouda_Abdoulaye_CV_Developpeur_Logiciel_Junior.pdf" download>Télécharger le CV</a>
+    <a class="btn-secondary" href="#contact">Me contacter</a>
   </div>
   <div class="hero-stats">
     <div>
@@ -51,7 +47,7 @@
       <div class="stat-label">Liste d'excellence du doyen</div>
     </div>
     <div>
-      <div class="stat-num">5+</div>
+      <div class="stat-num">6+</div>
       <div class="stat-label">Projets publiés</div>
     </div>
     <div>
@@ -95,14 +91,16 @@
 
     <!-- Casquette IA -->
     <a href="projets/casquette.html" class="project-card">
+      <img src="assets/img/casquette.png" alt="Casquette intelligente prototype" class="card-img">
       <div class="card-cat">IoT · IA appliquée</div>
       <div class="card-title">Casquette intelligente pour non-voyants</div>
-      <p class="card-desc">Détection d'obstacles par ultrason + reconnaissance visuelle YOLOv8 en temps réel via ESP32-CAM. Retour audio de direction.</p>
+      <p class="card-desc">Détection d'obstacles ultrason + reconnaissance YOLOv8 via ESP32-CAM. Retour audio de direction en temps réel.</p>
       <div class="tech-stack" style="margin-bottom: 14px;">
         <span class="tech">Python</span>
         <span class="tech">YOLOv8</span>
-        <span class="tech">ESP32</span>
+        <span class="tech">ESP32-CAM</span>
         <span class="tech">Arduino</span>
+        <span class="tech">OpenCV</span>
       </div>
       <div class="card-footer">
         <span class="github-link">⎇ GitHub</span>
@@ -112,22 +110,25 @@
 
     <!-- DSP FPGA -->
     <a href="projets/dsp-fpga.html" class="project-card">
+      <img src="assets/img/dsp.png" alt="DSP FPGA" class="card-img">
       <div class="card-cat">FPGA · VHDL · 2e cycle</div>
       <div class="card-title">Processeur DSP sur FPGA</div>
-      <p class="card-desc">Conception d'un processeur DSP simplifié en VHDL avec pipeline, ALU (add/mult/accumulate) et testbench de validation. Cours de 2e cycle.</p>
+      <p class="card-desc">Conception d'un processeur DSP en VHDL avec pipeline, ALU (add/mult/accumulate), UART et testbench complet sur FPGA Nexys Video.</p>
       <div class="tech-stack" style="margin-bottom: 14px;">
         <span class="tech">VHDL</span>
         <span class="tech">FPGA</span>
-        <span class="tech">Testbench</span>
+        <span class="tech">Pipeline</span>
+        <span class="tech">UART</span>
       </div>
       <div class="card-footer">
         <span class="github-link">⎇ GitHub</span>
-        <span class="link-arrow" style="font-size:11px;">Voir →</span>
+        <span class="honors-badge" style="margin-bottom:0; padding: 2px 8px; font-size: 9px;">Cours maîtrise</span>
       </div>
     </a>
 
     <!-- Rythme cardiaque -->
     <a href="projets/rythme-cardiaque.html" class="project-card">
+      <img src="assets/img/freq.png" alt="Interface rythme cardiaque" class="card-img">
       <div class="card-cat">Embarqué · Flask</div>
       <div class="card-title">Suivi du rythme cardiaque en temps réel</div>
       <p class="card-desc">Lecture analogique Arduino → calcul BPM → serveur Flask → visualisation temps réel sur interface web.</p>
@@ -173,6 +174,22 @@
       </div>
     </a>
 
+    <!-- SRAM TGD8T -->
+    <a href="projets/sram-vlsi.html" class="project-card">
+      <div class="card-cat">VLSI · Cadence · 2e cycle</div>
+      <div class="card-title">Cellule SRAM TGD8T</div>
+      <p class="card-desc">Conception, simulation, layout et validation d'une cellule SRAM 8 transistors sur Cadence Virtuoso. DRC/LVS, analyse temporelle, stabilité.</p>
+      <div class="tech-stack" style="margin-bottom: 14px;">
+        <span class="tech">Cadence Virtuoso</span>
+        <span class="tech">VLSI</span>
+        <span class="tech">DRC/LVS</span>
+      </div>
+      <div class="card-footer">
+        <span class="honors-badge" style="margin-bottom:0; padding: 2px 8px; font-size: 9px;">2e cycle · Honors</span>
+        <span class="link-arrow" style="font-size:11px;">Voir →</span>
+      </div>
+    </a>
+
   </div>
 </section>
 
@@ -186,34 +203,34 @@
   <div class="excellence-banner">
     <div class="excellence-icon">★</div>
     <div class="excellence-text">
-      <strong>Excellence académique</strong> — Moyenne 3.54 / 4.3 · Liste d'excellence du doyen : Hiver 2022, Automne 2022, Hiver 2023
+      <strong>Excellence académique</strong> — Moyenne 3.54 / 4.3 · Liste d'excellence du doyen : Hiver 2022, Automne 2022, Hiver 2023 · Cours de 2e cycle (maîtrise Honors)
     </div>
   </div>
 
   <div class="skills-grid">
-    <div class="skill-group">
-      <div class="skill-group-title">Logiciel principal</div>
+    <div class="skill-group primary">
+      <div class="skill-group-title">Compétences principales</div>
       <div class="skill-list">
         <span class="skill-tag">Python</span>
-        <span class="skill-tag">Django REST</span>
+        <span class="skill-tag">JavaScript / TypeScript</span>
         <span class="skill-tag">React</span>
-        <span class="skill-tag">TypeScript</span>
-        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">Django REST</span>
+        <span class="skill-tag">SQL / PostgreSQL</span>
         <span class="skill-tag">API REST</span>
-        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Git / GitLab</span>
         <span class="skill-tag">Linux</span>
       </div>
     </div>
     <div class="skill-group">
-      <div class="skill-group-title">Embarqué · Hardware</div>
+      <div class="skill-group-title">Systèmes · Embarqué</div>
       <div class="skill-list">
         <span class="skill-tag">C / C++</span>
         <span class="skill-tag">Arduino</span>
         <span class="skill-tag">ESP32</span>
-        <span class="skill-tag">VHDL</span>
-        <span class="skill-tag">FPGA</span>
-        <span class="skill-tag">UART</span>
+        <span class="skill-tag">VHDL / FPGA</span>
+        <span class="skill-tag">UART / Série</span>
         <span class="skill-tag">Capteurs</span>
+        <span class="skill-tag">Cadence Virtuoso</span>
       </div>
     </div>
     <div class="skill-group">
@@ -223,9 +240,9 @@
         <span class="skill-tag">Flask</span>
         <span class="skill-tag">OpenCV</span>
         <span class="skill-tag">YOLOv8</span>
-        <span class="skill-tag">Cadence</span>
         <span class="skill-tag">LTspice</span>
         <span class="skill-tag">Wireshark</span>
+        <span class="skill-tag">Docker</span>
       </div>
     </div>
   </div>
