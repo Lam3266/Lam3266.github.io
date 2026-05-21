@@ -49,6 +49,22 @@
     </ul>
   </div>
   <div class="project-section">
+    <h3>Architecture du système</h3>
+    <div class="arch-diagram">
+      <div class="arch-layer">Capteur HC-SR04 (Arduino MKR1000)</div>
+      <div class="arch-layer-sub">Mesure distance · Seuil critique · Déclenchement capture</div>
+      <div class="arch-arrow">↓</div>
+      <div class="arch-layer">ESP32-CAM (Wi-Fi)</div>
+      <div class="arch-layer-sub">Capture image · Envoi socket TCP vers serveur Python</div>
+      <div class="arch-arrow">↓</div>
+      <div class="arch-layer">Serveur Python (YOLOv8 + OpenCV)</div>
+      <div class="arch-layer-sub">Détection objets · Calcul direction libre · Réponse audio</div>
+      <div class="arch-arrow">↓</div>
+      <div class="arch-layer">Haut-parleur (retour audio)</div>
+      <div class="arch-layer-sub">Instruction vocale : gauche / droite / recul / arrêt</div>
+    </div>
+  </div>
+  <div class="project-section">
     <h3>Points techniques clés</h3>
     <ul>
       <li>Intégration capteur ultrason / microcontrôleur / caméra / serveur IA en pipeline temps réel</li>
