@@ -167,3 +167,199 @@ a { text-decoration: none; color: inherit; }
   .hero-stats { gap: 20px; }
   .page-wrapper { padding: 48px 20px; }
 }
+
+/* ── HERO V2 ─────────────────────────── */
+.hero-role {
+  color: var(--text-muted);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+.hero-subtitle {
+  color: var(--text-dim);
+  font-size: 12px;
+  font-family: var(--mono);
+  letter-spacing: 0.5px;
+  margin-bottom: 24px;
+}
+
+/* 4-CTA GRID */
+.ctas-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  max-width: 480px;
+  margin-bottom: 40px;
+}
+.ctas-4 .btn-primary,
+.ctas-4 .btn-secondary {
+  text-align: center;
+  padding: 11px 16px;
+  font-size: 12px;
+}
+
+/* ── GEU CLOUD FEATURE CARDS ─────────── */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.feature-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  transition: border-color 0.2s;
+}
+.feature-card:hover { border-color: var(--accent); }
+.feature-card-icon { font-size: 20px; margin-bottom: 8px; display: block; }
+.feature-card-title { color: var(--text); font-size: 13px; font-weight: 600; margin-bottom: 4px; }
+.feature-card-desc { color: var(--text-dim); font-size: 11px; line-height: 1.5; }
+
+/* ── ARCHITECTURE DIAGRAM ────────────── */
+.arch-diagram {
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: 8px;
+  padding: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.arch-layer {
+  background: rgba(6, 182, 212, 0.08);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  border-radius: 6px;
+  padding: 10px 32px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 220px;
+  text-align: center;
+}
+.arch-layer-sub {
+  color: var(--text-dim);
+  font-size: 10px;
+  font-family: var(--mono);
+  text-align: center;
+  margin-top: 4px;
+}
+.arch-arrow {
+  color: var(--accent);
+  font-size: 18px;
+  line-height: 1;
+  padding: 4px 0;
+}
+.arch-row {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.arch-row .arch-layer { flex: 1; min-width: 0; }
+
+/* ── SCREENSHOT GRID ─────────────────── */
+.screenshot-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.screenshot-placeholder {
+  background: var(--bg-card);
+  border: 1px dashed var(--border-accent);
+  border-radius: 8px;
+  aspect-ratio: 16 / 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.screenshot-placeholder-icon { color: var(--text-dim); font-size: 22px; }
+.screenshot-placeholder-label {
+  color: var(--text-dim);
+  font-size: 11px;
+  font-family: var(--mono);
+}
+
+/* ── CALLOUT BOX (academic / honors) ─── */
+.callout-box {
+  background: linear-gradient(135deg, rgba(6,182,212,0.10), rgba(6,182,212,0.03));
+  border: 1px solid rgba(6,182,212,0.25);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  padding: 18px 22px;
+  margin-bottom: 32px;
+}
+.callout-title { color: var(--text); font-size: 13px; font-weight: 700; margin-bottom: 10px; }
+.callout-items { display: flex; flex-wrap: wrap; gap: 16px; }
+.callout-item { color: var(--text-muted); font-size: 12px; display: flex; align-items: center; gap: 6px; }
+.callout-item::before { content: '★'; color: var(--accent); font-size: 10px; flex-shrink: 0; }
+
+/* ── SKILL HIERARCHY ─────────────────── */
+.skill-group.primary .skill-group-title { color: #38bdf8; }
+.skill-group.primary .skill-tag {
+  background: rgba(6,182,212,0.10);
+  color: #7dd3fc;
+  border: 1px solid rgba(6,182,212,0.20);
+}
+
+/* ── HONORS BADGE ────────────────────── */
+.honors-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.30);
+  color: #c4b5fd;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+/* ── CARD THUMBNAIL ─────────────────── */
+.card-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  border: 1px solid var(--border);
+  display: block;
+}
+
+/* ── WHAT I BUILT (responsibility list) ─ */
+.built-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.built-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 13px;
+  padding: 8px 12px;
+  background: var(--bg-card);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+.built-item::before { content: '✓'; color: var(--accent); flex-shrink: 0; font-size: 11px; }
+
+/* ── RESPONSIVE V2 ───────────────────── */
+@media (max-width: 700px) {
+  .ctas-4 { grid-template-columns: 1fr; max-width: 100%; }
+  .feature-grid { grid-template-columns: 1fr; }
+  .screenshot-grid { grid-template-columns: 1fr; }
+  .built-grid { grid-template-columns: 1fr; }
+  .arch-row { flex-direction: column; }
+}
