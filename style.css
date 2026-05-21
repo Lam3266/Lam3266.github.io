@@ -363,3 +363,10 @@ a { text-decoration: none; color: inherit; }
   .built-grid { grid-template-columns: 1fr; }
   .arch-row { flex-direction: column; }
 }
+
+/* ── HONORS BADGE IN CARD FOOTER ─────── */
+.card-footer .honors-badge {
+  margin-bottom: 0;
+  padding: 2px 8px;
+  font-size: 9px;
+}
