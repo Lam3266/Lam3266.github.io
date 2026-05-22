@@ -370,3 +370,291 @@ a { text-decoration: none; color: inherit; }
   padding: 2px 8px;
   font-size: 9px;
 }
+
+/* ── HERO 2-COL ─────────────────────────── */
+.hero-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* ── HIGHLIGHTS CARD ────────────────────── */
+.highlights-card {
+  background: #0a1628;
+  border: 1px solid var(--border-accent);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.highlights-header {
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.highlights-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+.highlights-title { color: var(--text); font-size: 12px; font-weight: 700; }
+.highlight-item {
+  padding: 14px 18px;
+  border-bottom: 1px solid #0d1f35;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.highlight-item:last-child { border-bottom: none; }
+.highlight-check { color: var(--accent); font-size: 12px; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.highlight-name { color: var(--text); font-size: 13px; font-weight: 600; margin-bottom: 3px; }
+.highlight-sub { color: var(--text-dim); font-size: 11px; line-height: 1.4; }
+
+/* ── TABS ───────────────────────────────── */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+.tab {
+  padding: 9px 20px;
+  font-size: 13px;
+  color: var(--text-dim);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  font-family: var(--font);
+}
+.tab:hover { color: var(--text-muted); }
+.tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  background: rgba(6, 182, 212, 0.04);
+}
+.tab-count { font-size: 10px; color: var(--text-dim); margin-left: 4px; }
+.tab.active .tab-count { color: var(--accent); }
+
+/* ── GEU CLOUD FEATURED ─────────────────── */
+.geu-featured {
+  grid-column: 1 / -1;
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s;
+  color: inherit;
+  text-decoration: none;
+}
+.geu-featured:hover { border-color: var(--accent); }
+.geu-featured-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.geu-featured-left { padding: 24px 24px 20px; }
+.geu-featured-right {
+  border-left: 1px solid var(--border-accent);
+  overflow: hidden;
+}
+.geu-screenshot {
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.85;
+}
+.geu-feature-badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.geu-badge {
+  background: rgba(6, 182, 212, 0.07);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+  color: #67e8f9;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 10px;
+}
+.geu-featured-footer {
+  border-top: 1px solid var(--border);
+  padding: 11px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--bg);
+}
+
+/* ── LANG LOGO THUMBNAILS ───────────────── */
+.logo-lang {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-weight: 900;
+  color: white;
+  border-radius: 6px;
+  margin-bottom: 14px;
+}
+.logo-c   { background: #283593; font-size: 52px; }
+.logo-cpp { background: #004c8c; font-size: 32px; letter-spacing: -1px; }
+
+/* ── SRAM HORIZONTAL CARD ───────────────── */
+.sram-card { grid-column: 1 / -1; }
+.sram-inner {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+.sram-img {
+  width: 200px;
+  height: 160px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 6px 0 0 6px;
+  border-right: 1px solid var(--border);
+}
+.sram-content { padding: 16px 18px; flex: 1; display: flex; flex-direction: column; }
+
+/* ── ARCHITECTURE DIAGRAM (GEU detail) ─── */
+.arch-diagram-v2 {
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: 8px;
+  padding: 28px 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  max-width: 480px;
+}
+.arch-layer-v2 {
+  background: rgba(6, 182, 212, 0.08);
+  border: 1px solid rgba(6, 182, 212, 0.25);
+  border-radius: 6px;
+  padding: 10px 28px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 260px;
+  text-align: center;
+}
+.arch-tags-v2 {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  justify-content: center;
+  min-width: 260px;
+}
+.arch-tag-v2 {
+  background: var(--bg);
+  color: var(--text-dim);
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-size: 9px;
+  font-family: var(--mono);
+}
+.arch-arrow-v2 { color: var(--accent); font-size: 18px; padding: 4px 0; padding-left: 130px; }
+
+/* ── WORKFLOW (GEU detail) ──────────────── */
+.workflow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 32px;
+}
+.wf-step {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-align: center;
+  flex-shrink: 0;
+}
+.wf-icon { font-size: 18px; margin-bottom: 5px; }
+.wf-label { color: var(--text); font-size: 11px; font-weight: 600; }
+.wf-sub { color: var(--text-dim); font-size: 9px; margin-top: 2px; }
+.wf-arrow { color: var(--border-accent); font-size: 20px; flex-shrink: 0; padding: 0 2px; }
+
+/* ── ENGINEERING SKILLS GROUP ───────────── */
+.skill-group.engineering { border-color: rgba(163, 230, 53, 0.15); }
+.skill-group.engineering .skill-group-title { color: #a3e635; }
+.skill-group.engineering .skill-tag {
+  background: rgba(163, 230, 53, 0.07);
+  color: #bef264;
+  border: 1px solid rgba(163, 230, 53, 0.12);
+}
+
+/* ── FOOTER ─────────────────────────────── */
+.site-footer {
+  background: #040810;
+  border-top: 1px solid var(--border);
+  padding: 40px 48px 24px;
+}
+.footer-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+.footer-col-title {
+  color: var(--accent);
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.footer-link {
+  color: var(--text-dim);
+  font-size: 13px;
+  display: block;
+  margin-bottom: 7px;
+  transition: color 0.15s;
+  text-decoration: none;
+}
+.footer-link:hover { color: var(--text-muted); }
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-copy { color: var(--text-dim); font-size: 12px; }
+.footer-socials { display: flex; gap: 10px; }
+.footer-social {
+  color: var(--text-dim);
+  font-size: 12px;
+  border: 1px solid var(--border);
+  padding: 5px 14px;
+  border-radius: 4px;
+  transition: border-color 0.15s, color 0.15s;
+  text-decoration: none;
+}
+.footer-social:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ── RESPONSIVE v3 ──────────────────────── */
+@media (max-width: 700px) {
+  .hero-2col { grid-template-columns: 1fr; gap: 28px; }
+  .geu-featured-body { grid-template-columns: 1fr; }
+  .geu-featured-right { border-left: none; border-top: 1px solid var(--border-accent); }
+  .geu-screenshot { min-height: 160px; }
+  .sram-inner { flex-direction: column; }
+  .sram-img { width: 100%; height: 160px; border-radius: 6px 6px 0 0; border-right: none; border-bottom: 1px solid var(--border); }
+  .footer-grid { grid-template-columns: 1fr; gap: 20px; }
+  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+  .workflow { justify-content: flex-start; }
+  .site-footer { padding: 32px 20px 20px; }
+}
