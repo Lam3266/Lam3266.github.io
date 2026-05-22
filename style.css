@@ -403,7 +403,7 @@ a { text-decoration: none; color: inherit; }
 .highlights-title { color: var(--text); font-size: 12px; font-weight: 700; }
 .highlight-item {
   padding: 14px 18px;
-  border-bottom: 1px solid #0d1f35;
+  border-bottom: 1px solid var(--border);
   display: flex;
   align-items: flex-start;
   gap: 12px;
@@ -561,7 +561,7 @@ a { text-decoration: none; color: inherit; }
   font-size: 9px;
   font-family: var(--mono);
 }
-.arch-arrow-v2 { color: var(--accent); font-size: 18px; padding: 4px 0; padding-left: 130px; }
+.arch-arrow-v2 { color: var(--accent); font-size: 18px; padding: 4px 0; align-self: center; }
 
 /* ── WORKFLOW (GEU detail) ──────────────── */
 .workflow {
