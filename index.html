@@ -30,7 +30,7 @@
       <p class="hero-role">Développeur logiciel junior — API REST, applications métier et systèmes intégrés</p>
       <div class="ctas-4">
         <a class="btn-primary" href="projets/geu-cloud.html">Voir GEU Cloud</a>
-        <a class="btn-secondary" href="#projets" onclick="event.preventDefault(); if(window.setTab) setTab('embarque'); document.getElementById('projets').scrollIntoView({behavior:'smooth'});">Projets embarqués</a>
+        <a class="btn-secondary" href="#projets" data-goto-tab="embarque">Projets embarqués</a>
         <a class="btn-secondary" href="assets/cv/Lamine_Daouda_Abdoulaye_CV_Developpeur_Logiciel_Junior.pdf" download>Télécharger le CV</a>
         <a class="btn-secondary" href="#contact">Me contacter</a>
       </div>
@@ -308,7 +308,7 @@
 <hr class="divider">
 
 <!-- CONTACT -->
-<section class="section" id="contact" style="padding-bottom: 80px;">
+<section class="section section-contact" id="contact">
   <div class="section-tag">Contact</div>
   <div class="section-title">Prenons contact</div>
   <p class="contact-desc">
@@ -329,7 +329,7 @@
       <div>
         <div class="footer-col-title">Navigation</div>
         <a href="#projets" class="footer-link">Projets logiciels</a>
-        <a href="#projets" onclick="event.preventDefault(); if(window.setTab) setTab('embarque'); document.getElementById('projets').scrollIntoView({behavior:'smooth'});" class="footer-link">Projets embarqués</a>
+        <a href="#projets" data-goto-tab="embarque" class="footer-link">Projets embarqués</a>
         <a href="#competences" class="footer-link">Compétences</a>
         <a href="#contact" class="footer-link">Contact</a>
       </div>

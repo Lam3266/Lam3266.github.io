@@ -21,6 +21,16 @@
   // Expose pour les CTAs hero
   window.setTab = setTab;
 
+  // Liens avec data-goto-tab déclenchent l'onglet correspondant
+  document.querySelectorAll('[data-goto-tab]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      setTab(el.dataset.gotoTab);
+      var target = document.getElementById('projets');
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
   // État initial
   setTab('all');
 })();
