@@ -6,6 +6,7 @@
   <meta name="description" content="Développeur logiciel junior avec forte culture systèmes, embarqué et validation technique — Lamine Daouda Abdoulaye, diplômé UQAM.">
   <title>Lamine Daouda Abdoulaye — Développeur logiciel junior</title>
   <link rel="stylesheet" href="style.css">
+  <script src="assets/js/tabs.js" defer></script>
 </head>
 <body>
 
@@ -21,38 +22,73 @@
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-tag">Diplômé UQAM · Disponible au Canada</div>
-  <h1>Lamine<br><span class="accent">Daouda</span> Abdoulaye</h1>
-  <p class="hero-role">Développeur logiciel junior — applications métier, systèmes techniques et embarqué</p>
-  <p class="hero-subtitle">Python • React/TypeScript • Django REST • SQL • C/C++ • Systèmes embarqués</p>
-  <p class="hero-desc">
-    Diplômé en systèmes informatiques et électroniques de l'UQAM, je développe des applications techniques
-    et des systèmes intégrés combinant API REST, SQL, React/TypeScript, Python, C/C++, capteurs et validation.
-    Mon profil se distingue par une forte rigueur, une excellence académique reconnue et des projets complets
-    allant d'une plateforme SaaS privée aux systèmes embarqués et FPGA.
-  </p>
-  <div class="ctas-4">
-    <a class="btn-primary" href="projets/geu-cloud.html">Voir GEU Cloud</a>
-    <a class="btn-secondary" href="#projets">Voir projets embarqués</a>
-    <a class="btn-secondary" href="assets/cv/Lamine_Daouda_Abdoulaye_CV_Developpeur_Logiciel_Junior.pdf" download>Télécharger le CV</a>
-    <a class="btn-secondary" href="#contact">Me contacter</a>
-  </div>
-  <div class="hero-stats">
+  <div class="hero-2col">
+    <!-- GAUCHE -->
     <div>
-      <div class="stat-num">3.54</div>
-      <div class="stat-label">Moyenne / 4.3</div>
+      <div class="hero-tag">Diplômé UQAM · Ouvert à la relocalisation au Canada</div>
+      <h1>Lamine<br><span class="accent">Daouda</span><br>Abdoulaye</h1>
+      <p class="hero-role">Développeur logiciel junior — API REST, applications métier et systèmes intégrés</p>
+      <div class="ctas-4">
+        <a class="btn-primary" href="projets/geu-cloud.html">Voir GEU Cloud</a>
+        <a class="btn-secondary" href="#projets" onclick="event.preventDefault(); if(window.setTab) setTab('embarque'); document.getElementById('projets').scrollIntoView({behavior:'smooth'});">Projets embarqués</a>
+        <a class="btn-secondary" href="assets/cv/Lamine_Daouda_Abdoulaye_CV_Developpeur_Logiciel_Junior.pdf" download>Télécharger le CV</a>
+        <a class="btn-secondary" href="#contact">Me contacter</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <div class="stat-num">3.54</div>
+          <div class="stat-label">Moyenne / 4.3</div>
+        </div>
+        <div>
+          <div class="stat-num">3×</div>
+          <div class="stat-label">Liste d'excellence du doyen</div>
+        </div>
+        <div>
+          <div class="stat-num">7</div>
+          <div class="stat-label">Projets</div>
+        </div>
+        <div>
+          <div class="stat-num">2025</div>
+          <div class="stat-label">Diplômé UQAM</div>
+        </div>
+      </div>
     </div>
+    <!-- DROITE : HIGHLIGHTS -->
     <div>
-      <div class="stat-num">3×</div>
-      <div class="stat-label">Liste d'excellence du doyen</div>
-    </div>
-    <div>
-      <div class="stat-num">6+</div>
-      <div class="stat-label">Projets publiés</div>
-    </div>
-    <div>
-      <div class="stat-num">2025</div>
-      <div class="stat-label">Diplômé UQAM</div>
+      <div class="highlights-card">
+        <div class="highlights-header">
+          <span class="highlights-dot"></span>
+          <span class="highlights-title">Highlights</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-check">✓</span>
+          <div>
+            <div class="highlight-name">GEU Cloud</div>
+            <div class="highlight-sub">Plateforme SaaS privée de gestion d'équipements</div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-check">✓</span>
+          <div>
+            <div class="highlight-name">DSP sur FPGA</div>
+            <div class="highlight-sub">Cours de maîtrise Honors</div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-check">✓</span>
+          <div>
+            <div class="highlight-name">Casquette intelligente</div>
+            <div class="highlight-sub">Vision artificielle + ESP32</div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-check">✓</span>
+          <div>
+            <div class="highlight-name">3 distinctions du doyen</div>
+            <div class="highlight-sub">GPA 3.54 / 4.3</div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
