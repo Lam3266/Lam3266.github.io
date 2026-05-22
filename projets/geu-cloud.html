@@ -66,6 +66,33 @@
   </div>
 
   <div class="project-section">
+    <h3>Architecture</h3>
+    <div class="arch-diagram-v2">
+      <div class="arch-layer-v2">React / TypeScript</div>
+      <div class="arch-tags-v2">
+        <span class="arch-tag-v2">composants</span>
+        <span class="arch-tag-v2">état</span>
+        <span class="arch-tag-v2">validation client</span>
+      </div>
+      <div class="arch-arrow-v2">↕</div>
+      <div class="arch-layer-v2">API REST — Django REST Framework</div>
+      <div class="arch-tags-v2">
+        <span class="arch-tag-v2">endpoints</span>
+        <span class="arch-tag-v2">permissions</span>
+        <span class="arch-tag-v2">logique métier</span>
+        <span class="arch-tag-v2">JWT</span>
+      </div>
+      <div class="arch-arrow-v2">↕</div>
+      <div class="arch-layer-v2">PostgreSQL</div>
+      <div class="arch-tags-v2">
+        <span class="arch-tag-v2">modèles relationnels</span>
+        <span class="arch-tag-v2">historique</span>
+        <span class="arch-tag-v2">select_related</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-section">
     <h3>Fonctionnalités principales</h3>
     <div class="feature-grid">
       <div class="feature-card">
@@ -147,6 +174,47 @@
       <div class="built-item">Sérialisation imbriquée sans N+1 queries (select_related)</div>
       <div class="built-item">Validation des données d'entrée côté API</div>
       <div class="built-item">Organisation modulaire du projet (apps Django découplées)</div>
+    </div>
+  </div>
+
+  <div class="project-section">
+    <h3>Workflow utilisateur</h3>
+    <div class="workflow">
+      <div class="wf-step">
+        <div class="wf-icon">📦</div>
+        <div class="wf-label">Création</div>
+        <div class="wf-sub">équipement</div>
+      </div>
+      <div class="wf-arrow">→</div>
+      <div class="wf-step">
+        <div class="wf-icon">🔍</div>
+        <div class="wf-label">QR Code</div>
+        <div class="wf-sub">généré &amp; assigné</div>
+      </div>
+      <div class="wf-arrow">→</div>
+      <div class="wf-step">
+        <div class="wf-icon">🎫</div>
+        <div class="wf-label">Ticket</div>
+        <div class="wf-sub">maintenance</div>
+      </div>
+      <div class="wf-arrow">→</div>
+      <div class="wf-step">
+        <div class="wf-icon">🔧</div>
+        <div class="wf-label">Intervention</div>
+        <div class="wf-sub">technicien</div>
+      </div>
+      <div class="wf-arrow">→</div>
+      <div class="wf-step">
+        <div class="wf-icon">📋</div>
+        <div class="wf-label">Historique</div>
+        <div class="wf-sub">traçabilité</div>
+      </div>
+      <div class="wf-arrow">→</div>
+      <div class="wf-step">
+        <div class="wf-icon">📊</div>
+        <div class="wf-label">Dashboard</div>
+        <div class="wf-sub">indicateurs</div>
+      </div>
     </div>
   </div>
 
