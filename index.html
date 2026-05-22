@@ -100,33 +100,51 @@
   <div class="section-tag">Portfolio</div>
   <div class="section-title">Projets réalisés</div>
 
+  <div class="tabs" role="tablist">
+    <button class="tab active" data-tab="all" role="tab">Tous <span class="tab-count">(7)</span></button>
+    <button class="tab" data-tab="logiciel" role="tab">Logiciel <span class="tab-count">(3)</span></button>
+    <button class="tab" data-tab="embarque" role="tab">Embarqué &amp; HW <span class="tab-count">(4)</span></button>
+  </div>
+
   <div class="project-grid">
 
-    <!-- GEU Cloud (vedette) -->
-    <a href="projets/geu-cloud.html" class="project-featured">
-      <div>
-        <div class="feat-label">Projet principal</div>
-        <div class="feat-title">GEU Cloud</div>
-        <p class="feat-desc">
-          Plateforme SaaS de gestion d'équipements — inventaire, tickets de maintenance,
-          traçabilité QR Code, rôles utilisateurs, tableaux de bord et API REST.
-        </p>
-        <div class="tech-stack">
-          <span class="tech">Django REST</span>
-          <span class="tech">React</span>
-          <span class="tech">TypeScript</span>
-          <span class="tech">PostgreSQL</span>
-          <span class="tech">API REST</span>
+    <!-- GEU Cloud (vedette enrichie) -->
+    <a href="projets/geu-cloud.html" class="geu-featured" data-category="logiciel">
+      <div class="geu-featured-body">
+        <div class="geu-featured-left">
+          <div class="feat-label">Projet principal · SaaS · En développement</div>
+          <div class="feat-title">GEU Cloud</div>
+          <p class="feat-desc">
+            Application SaaS complète — gestion d'équipements, maintenance, inventaire,
+            rôles utilisateurs, QR codes et tableaux de bord analytiques.
+          </p>
+          <div class="tech-stack" style="margin-bottom: 14px;">
+            <span class="tech">Django REST</span>
+            <span class="tech">React</span>
+            <span class="tech">TypeScript</span>
+            <span class="tech">PostgreSQL</span>
+          </div>
+          <div class="geu-feature-badges">
+            <span class="geu-badge">API REST</span>
+            <span class="geu-badge">Auth JWT</span>
+            <span class="geu-badge">Permissions</span>
+            <span class="geu-badge">QR Code</span>
+            <span class="geu-badge">Dashboard</span>
+            <span class="geu-badge">Multi-rôles</span>
+          </div>
+        </div>
+        <div class="geu-featured-right">
+          <img src="assets/img/geu/dashboard_admin.png" alt="GEU Cloud — dashboard administrateur" class="geu-screenshot">
         </div>
       </div>
-      <div class="feat-right">
-        <span class="status-badge">Privé</span>
-        <span class="link-arrow">Étude de cas →</span>
+      <div class="geu-featured-footer">
+        <span class="status-badge">Privé — Code source non public</span>
+        <span class="link-arrow">Étude de cas complète →</span>
       </div>
     </a>
 
     <!-- Casquette IA -->
-    <a href="projets/casquette.html" class="project-card">
+    <a href="projets/casquette.html" class="project-card" data-category="embarque">
       <img src="assets/img/casquette.png" alt="Casquette intelligente prototype" class="card-img">
       <div class="card-cat">IoT · IA appliquée</div>
       <div class="card-title">Casquette intelligente pour non-voyants</div>
@@ -145,7 +163,7 @@
     </a>
 
     <!-- DSP FPGA -->
-    <a href="projets/dsp-fpga.html" class="project-card">
+    <a href="projets/dsp-fpga.html" class="project-card" data-category="embarque">
       <img src="assets/img/dsp.png" alt="DSP FPGA" class="card-img">
       <div class="card-cat">FPGA · VHDL · 2e cycle</div>
       <div class="card-title">Processeur DSP sur FPGA</div>
@@ -163,7 +181,7 @@
     </a>
 
     <!-- Rythme cardiaque -->
-    <a href="projets/rythme-cardiaque.html" class="project-card">
+    <a href="projets/rythme-cardiaque.html" class="project-card" data-category="embarque">
       <img src="assets/img/freq.png" alt="Interface rythme cardiaque" class="card-img">
       <div class="card-cat">Embarqué · Flask</div>
       <div class="card-title">Suivi du rythme cardiaque en temps réel</div>
@@ -180,7 +198,8 @@
     </a>
 
     <!-- Surveillance C++ -->
-    <a href="projets/surveillance-cpp.html" class="project-card">
+    <a href="projets/surveillance-cpp.html" class="project-card" data-category="logiciel">
+      <div class="logo-lang logo-cpp">C++</div>
       <div class="card-cat">C++ · Structures de données</div>
       <div class="card-title">Système de surveillance de localisation</div>
       <p class="card-desc">Application C++ modulaire avec arbres AVL, gestion d'historique horodaté et traitement de données de localisation.</p>
@@ -196,7 +215,8 @@
     </a>
 
     <!-- Simulation C -->
-    <a href="projets/hydro-c.html" class="project-card">
+    <a href="projets/hydro-c.html" class="project-card" data-category="logiciel">
+      <div class="logo-lang logo-c">C</div>
       <div class="card-cat">C · Algorithmique</div>
       <div class="card-title">Simulation de production hydroélectrique</div>
       <p class="card-desc">Simulation en C de production d'énergie avec validation de données, calculs physiques et structuration modulaire.</p>
@@ -211,18 +231,22 @@
     </a>
 
     <!-- SRAM TGD8T -->
-    <a href="projets/sram-vlsi.html" class="project-card">
-      <div class="card-cat">VLSI · Cadence · 2e cycle</div>
-      <div class="card-title">Cellule SRAM TGD8T</div>
-      <p class="card-desc">Conception, simulation, layout et validation d'une cellule SRAM 8 transistors sur Cadence Virtuoso. DRC/LVS, analyse temporelle, stabilité.</p>
-      <div class="tech-stack" style="margin-bottom: 14px;">
-        <span class="tech">Cadence Virtuoso</span>
-        <span class="tech">VLSI</span>
-        <span class="tech">DRC/LVS</span>
-      </div>
-      <div class="card-footer">
-        <span class="honors-badge" style="margin-bottom:0; padding: 2px 8px; font-size: 9px;">2e cycle · Honors</span>
-        <span class="link-arrow" style="font-size:11px;">Voir →</span>
+    <a href="projets/sram-vlsi.html" class="project-card sram-card" data-category="embarque">
+      <div class="sram-inner">
+        <img src="assets/img/sram_schematic.png" alt="Schéma SRAM TGD8T — Cadence Virtuoso" class="sram-img">
+        <div class="sram-content">
+          <div style="display:flex; gap:8px; align-items:center; margin-bottom:8px;">
+            <div class="card-cat" style="margin-bottom:0;">VLSI · Cadence · 2e cycle</div>
+            <span class="honors-badge" style="margin-bottom:0; padding:2px 8px; font-size:9px;">Cours maîtrise</span>
+          </div>
+          <div class="card-title" style="margin-bottom:8px;">Cellule SRAM TGD8T</div>
+          <p class="card-desc">Conception, simulation, layout et validation d'une cellule SRAM 8 transistors sur Cadence Virtuoso. DRC/LVS, analyse temporelle, stabilité.</p>
+          <div class="tech-stack">
+            <span class="tech">Cadence Virtuoso</span>
+            <span class="tech">VLSI</span>
+            <span class="tech">DRC/LVS</span>
+          </div>
+        </div>
       </div>
     </a>
 
@@ -245,7 +269,7 @@
 
   <div class="skills-grid">
     <div class="skill-group primary">
-      <div class="skill-group-title">Compétences principales</div>
+      <div class="skill-group-title">Core Software</div>
       <div class="skill-list">
         <span class="skill-tag">Python</span>
         <span class="skill-tag">JavaScript / TypeScript</span>
@@ -253,12 +277,10 @@
         <span class="skill-tag">Django REST</span>
         <span class="skill-tag">SQL / PostgreSQL</span>
         <span class="skill-tag">API REST</span>
-        <span class="skill-tag">Git / GitLab</span>
-        <span class="skill-tag">Linux</span>
       </div>
     </div>
     <div class="skill-group">
-      <div class="skill-group-title">Systèmes · Embarqué</div>
+      <div class="skill-group-title">Systems · Embedded</div>
       <div class="skill-list">
         <span class="skill-tag">C / C++</span>
         <span class="skill-tag">Arduino</span>
@@ -269,16 +291,15 @@
         <span class="skill-tag">Cadence Virtuoso</span>
       </div>
     </div>
-    <div class="skill-group">
-      <div class="skill-group-title">Complémentaires</div>
+    <div class="skill-group engineering">
+      <div class="skill-group-title">Engineering</div>
       <div class="skill-list">
-        <span class="skill-tag">Java</span>
-        <span class="skill-tag">Flask</span>
-        <span class="skill-tag">OpenCV</span>
-        <span class="skill-tag">YOLOv8</span>
-        <span class="skill-tag">LTspice</span>
-        <span class="skill-tag">Wireshark</span>
-        <span class="skill-tag">Docker</span>
+        <span class="skill-tag">Git Workflow</span>
+        <span class="skill-tag">Modular Architecture</span>
+        <span class="skill-tag">REST API Integration</span>
+        <span class="skill-tag">Validation &amp; Testing</span>
+        <span class="skill-tag">Debugging</span>
+        <span class="skill-tag">Technical Documentation</span>
       </div>
     </div>
   </div>
@@ -300,6 +321,42 @@
     <a class="btn-secondary" href="https://github.com/lam3266" target="_blank" rel="noopener">GitHub</a>
   </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-col-title">Navigation</div>
+        <a href="#projets" class="footer-link">Projets logiciels</a>
+        <a href="#projets" onclick="event.preventDefault(); if(window.setTab) setTab('embarque'); document.getElementById('projets').scrollIntoView({behavior:'smooth'});" class="footer-link">Projets embarqués</a>
+        <a href="#competences" class="footer-link">Compétences</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+      <div>
+        <div class="footer-col-title">Projets</div>
+        <a href="projets/geu-cloud.html" class="footer-link">GEU Cloud</a>
+        <a href="projets/casquette.html" class="footer-link">Casquette intelligente</a>
+        <a href="projets/dsp-fpga.html" class="footer-link">DSP sur FPGA</a>
+        <a href="projets/sram-vlsi.html" class="footer-link">SRAM TGD8T</a>
+      </div>
+      <div>
+        <div class="footer-col-title">Liens</div>
+        <a href="assets/cv/Lamine_Daouda_Abdoulaye_CV_Developpeur_Logiciel_Junior.pdf" download class="footer-link">Télécharger le CV</a>
+        <a href="https://github.com/lam3266" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+        <a href="https://linkedin.com/in/lamine-daouda-abdoulaye" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        <a href="mailto:lmndaouda@gmail.com" class="footer-link">lmndaouda@gmail.com</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">Lamine Daouda Abdoulaye · Diplômé UQAM 2025 · Ouvert au Canada</span>
+      <div class="footer-socials">
+        <a href="https://github.com/lam3266" target="_blank" rel="noopener" class="footer-social">GitHub</a>
+        <a href="https://linkedin.com/in/lamine-daouda-abdoulaye" target="_blank" rel="noopener" class="footer-social">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
