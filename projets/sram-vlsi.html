@@ -76,6 +76,23 @@
   </div>
 
   <div class="project-section">
+    <h3>Fonctionnement du circuit</h3>
+    <p><strong>Écriture</strong></p>
+    <ul>
+      <li><strong>Scénario 1 — écriture d'un 1 logique :</strong> quand WL = 1, RWL = 1, BL = 1, BLB = 0, le nœud Q stocke la valeur 1 et QB la valeur 0.</li>
+      <li><strong>Scénario 2 — écriture d'un 0 logique :</strong> quand WL = 1, RWL = 1, BL = 0, BLB = 1, le nœud Q stocke la valeur 0 et QB la valeur 1.</li>
+    </ul>
+    <p><strong>Lecture</strong></p>
+    <ul>
+      <li>WL = 1, RWL = 0, BL et BLB préchargées à VDD : lecture du contenu de la cellule sans modification de l'état stocké.</li>
+    </ul>
+    <p><strong>Mode de maintien</strong></p>
+    <ul>
+      <li>Quand WL = 0, les valeurs de Q et QB restent inchangées.</li>
+    </ul>
+  </div>
+
+  <div class="project-section">
     <h3>Résultats de simulation</h3>
     <div class="screenshot-grid">
       <div>
